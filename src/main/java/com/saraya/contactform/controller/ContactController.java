@@ -5,10 +5,7 @@ import com.saraya.contactform.message.Message;
 import com.saraya.contactform.servises.EmailService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -19,6 +16,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/contact")
+@CrossOrigin(origins = "*")
 public class ContactController {
 
 	private final EmailService emailService;

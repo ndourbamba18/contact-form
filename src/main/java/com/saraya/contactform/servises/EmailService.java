@@ -50,7 +50,7 @@ public class EmailService {
 								+	"<body>" 
 									+	"Email sent by: " + contactForm.getName() + "<br/>"
 									+   "Email address: " + contactForm.getEmail() + "<br/>"
-						            +    "Email address: " + contactForm.getPhone()
+						            +    "Phone Number: " + contactForm.getPhone()
 									+   "<br/><br/>"
 									+   contactForm.getMessage()
 								+   "</body>"
